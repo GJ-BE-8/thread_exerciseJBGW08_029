@@ -26,6 +26,7 @@ public class App
         //참고.main thread : Thread.currentThread()
         Thread.currentThread().setName("my-thread");
 
+
         //TODO#7 Counter 생성, countMaxSize는 10으로 설정 후 run method를 호출 합니다.
         Counter counter = new Counter(10);
         counter.run();
