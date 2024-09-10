@@ -22,7 +22,7 @@ public class Counter {
     public Counter(long countMaxSize) {
         //TODO#1 countMaxSize < 0 작다면 IllegalArgumentException 예외가 발생 합니다.
         if(countMaxSize < 0){
-            throw new IllegalArgumentException("countMaxSize가 0보다 작음");
+            throw new IllegalArgumentException("countMaxSize must be greater than zero");
         }
         //TODO#2 this.countMaxSize 초기화 합니다.
         this.countMaxSize = countMaxSize;
