@@ -33,6 +33,7 @@ public class App
         Thread threadA = new Thread(counterIncreaseHandler);
         //threadA의 thread name을 "thread-A"로 설정 합니다.
         threadA.setName("thread-A");
+        threadA.setPriority(Thread.MAX_PRIORITY);
         //threadA를 시작 합니다.
         threadA.start();
 
@@ -40,7 +41,7 @@ public class App
         Thread threadB = new Thread(counterIncreaseHandler);
         //threadB의 name을 'thread-B' 로 설정 합니다.
         threadB.setName("thread-B");
-
+        threadB.setPriority(Thread.MIN_PRIORITY);
         //threadB를 시작 합니다.
         threadB.start();
 
